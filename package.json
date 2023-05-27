@@ -1,0 +1,47 @@
+{
+  "name": "EXT-Detector",
+  "version": "2.1.1",
+  "rev": "230417",
+  "description": "Snowboy / Porcupine Simple detector for MMM-GoogleAssistant v4",
+  "main": "EXT-Detector.js",
+  "scripts": {
+    "preinstall": "installer/preinstall.sh",
+    "postinstall": "installer/postinstall.sh",
+    "update": "installer/update.sh",
+    "rebuild": "installer/rebuild.sh",
+    "reset": "git reset --hard",
+    "clean": "rm -rf node_modules package-lock.json"
+  },
+  "keywords": [
+    "magic mirror",
+    "module",
+    "hotword",
+    "porcupine",
+    "snowboy",
+    "smart mirror",
+    "voice",
+    "jarvis",
+    "ok google"
+  ],
+  "engines": {
+    "npm": ">=6.14.0",
+    "node": ">=14.0.0"
+  },
+  "author": "bugsounet",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OIKO-Corp/OIKO-EXT-Detector"
+  },
+  "bugs": {
+    "url": "https://forum.bugsounet.fr"
+  },
+  "dependencies": {
+    "@bugsounet/node-lpcm16": "^1.0.2",
+    "@bugsounet/snowboy": "^2.2.5",
+    "@picovoice/porcupine-node": "^2.1.7",
+    "check-node-version": "^4.2.1",
+    "magicmirror-rebuild": "^1.0.5",
+    "minify": "^9.2.0"
+  }
+}
